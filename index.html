@@ -6,6 +6,7 @@
     <title>Responsive Navbar with Tailwind CSS</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Bootstrap -->
     <!-- Slick Slider CSS -->
     <link
       rel="stylesheet"
@@ -59,42 +60,42 @@
             <ul class="lg:flex lg:space-x-6 text-white">
               <li>
                 <a
-                  href="#"
+                  href="#home"
                   class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-400"
                   >Home</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#product"
                   class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-400"
                   >Product</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#review"
                   class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-400"
                   >Review</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#about"
                   class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-400"
                   >About</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#client"
                   class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-400"
-                  >Customer</a
+                  >Client</a
                 >
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#contact"
                   class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-400"
                   >Contact</a
                 >
@@ -107,7 +108,7 @@
     <!-- End Navbar -->
 
     <!-- Main/Home -->
-    <section class="bg-cover bg-center h-screen">
+    <section id="home" class="bg-cover bg-center h-screen">
       <div
         class="bg-blue-900 bg-opacity-50 h-full flex flex-col justify-center items-center text-center"
       >
@@ -127,7 +128,7 @@
     <!-- End Main/Home -->
 
     <!-- Product List Section -->
-    <section class="py-12 bg-gray-100">
+    <section id="product" class="py-12 bg-gray-100">
       <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-8">Our Products</h2>
         <div class="flex flex-wrap -mx-4">
@@ -449,7 +450,7 @@
     <!-- End Of Product List -->
 
     <!-- Review Section -->
-    <section class="py-12 bg-gray-100">
+    <section id="review" class="py-12 bg-gray-100">
       <div class="container mx-auto px-4">
         <h2 class="text-3xl font-bold text-center mb-8">Customer Reviews</h2>
         <div class="review-slider">
@@ -624,6 +625,73 @@
         </div>
       </div>
     </section>
+
+    <!-- About -->
+    <section id="about" class="bg-gray-100 py-20">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold text-center mb-8">About Us</h2>
+          <p class="mt-6 text-gray-600 max-w-2xl mx-auto">
+              Toko bunga kami telah berdiri sejak tahun 2000 dan selalu memberikan pelayanan terbaik kepada pelanggan. Kami percaya bahwa bunga dapat membawa kebahagiaan dan kami ingin berbagi kebahagiaan itu dengan Anda.
+          </p>
+      </div>
+    </section>
+    <!-- End About -->
+
+    <!-- Customer -->
+    <section id="clients" class="py-20 bg-white">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold text-center mb-8">Client</h2>
+          <p class="mt-4 text-gray-600">Kami bangga telah bekerja sama dengan banyak perusahaan dan individu yang luar biasa</p>
+          <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-10 items-center">
+              <!-- Client 1 -->
+              <div class="p-4">
+                  <img src="https://via.placeholder.com/150x100" alt="Client 1 Logo" class="mx-auto">
+                  <p class="mt-2 text-gray-600">Perusahaan A</p>
+              </div>
+              <!-- Client 2 -->
+              <div class="p-4">
+                  <img src="https://via.placeholder.com/150x100" alt="Client 2 Logo" class="mx-auto">
+                  <p class="mt-2 text-gray-600">Perusahaan B</p>
+              </div>
+              <!-- Client 3 -->
+              <div class="p-4">
+                  <img src="https://via.placeholder.com/150x100" alt="Client 3 Logo" class="mx-auto">
+                  <p class="mt-2 text-gray-600">Perusahaan C</p>
+              </div>
+              <!-- Client 4 -->
+              <div class="p-4">
+                  <img src="https://via.placeholder.com/150x100" alt="Client 4 Logo" class="mx-auto">
+                  <p class="mt-2 text-gray-600">Perusahaan D</p>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- end Customer -->
+
+    <!-- Contact -->
+    <section id="contact" class="bg-gray-100 py-20">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold text-center mb-8">Contact</h2>
+          <p class="mt-4 text-gray-600">Kami siap membantu Anda untuk semua kebutuhan bunga</p>
+          <form class="mt-10 max-w-xl mx-auto bg-white p-8 shadow-lg rounded-lg">
+              <div class="mb-6">
+                  <label for="name" class="block text-left text-gray-700 font-semibold">Nama</label>
+                  <input type="text" id="name" class="w-full mt-2 p-3 border border-gray-300 rounded-lg" placeholder="Nama Anda">
+              </div>
+              <div class="mb-6">
+                  <label for="email" class="block text-left text-gray-700 font-semibold">Email</label>
+                  <input type="email" id="email" class="w-full mt-2 p-3 border border-gray-300 rounded-lg" placeholder="Email Anda">
+              </div>
+              <div class="mb-6">
+                  <label for="message" class="block text-left text-gray-700 font-semibold">Pesan</label>
+                  <textarea id="message" rows="5" class="w-full mt-2 p-3 border border-gray-300 rounded-lg" placeholder="Pesan Anda"></textarea>
+              </div>
+              <button type="submit" class="bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-green-600">Kirim Pesan</button>
+          </form>
+      </div>
+      </section>
+     <!-- end conctact -->
 
     <!-- Tailwind CSS Script -->
     <script>
